@@ -6,30 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flower store</title>
 
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <linkhref="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Work    rel="stylesheet">
 
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
     <script src="https://kit.fontawesome.com/b354dd4e89.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="font.css">
 
 
 </head>
 
 <body>
-    <header class="max-w-5xl mx-auto">
-        <nav class="flex justify-between items-center ">
+    <header class=" max-w-5xl mx-auto px-7">
+        <nav class="flex justify-between items-center">
             <img src="Images/logo.png" alt="">
             <ul class="flex gap-8 font-medium">
-                <li><a href=""></a>Home</li>
-                <li><a href=""></a>Shop</li>
-                <li><a href=""></a>About us</li>
-                <li><a href=""><i class="fa-solid fa-cart-shopping"></i> </a>Cart($56)</li>
-
+                <li><a class="hidden sm:block" href="">Home</a></li>
+                <li><a class="hidden sm:block" href="">Shop</a></li>
+                <li><a class="hidden sm:block" href="">About us</a></li>
+                <li><a href=""><i class="fa-solid fa-cart-shopping"></i>Cart($56)</a></li>
             </ul>
         </nav>
-        <div class="flex items-center justify-between">
-            <div>
-                <h3 class="noto-serif text-6xl mb-6">ALWAYS <SPan class="text-[#E95A08] font-bold">FRESH <br>
+        <div class="flex flex-col-reverse items-center sm:flex-row justify-between">
+            <div class="mt-20 max-w-lg">
+                <h3 class="noto-serif text-5xl mb-6">ALWAYS <SPan class="text-[#E95A08] font-bold">FRESH <br>
                         FLOWERS</SPan></h3>
                 <P><span class="text-[#000000]">Indulge your senses with the beauty and fragrance of our fresh flower
                         shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are
@@ -39,12 +43,12 @@
         </div>
     </header>
     <main>
-        <section class="max-w-5xl mx-auto grid justify-items-center px-4">
+        <section class="max-w-5xl mx-auto grid justify-items-center px-4 my-14">
             <h3 class="noto-serif text-4xl mb-7"> <span class="text-[#E95A08] font-bold">Our</span> Plants</h3>
             <p class="mb-7 text-center sm:max-w-xl">Indulge your senses with the beauty and fragrance of our fresh
                 flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
 
-            <div class=" grid grid-cols-2 sm:grid-cols-4 justify-items-center gap-13 w-full justify-around px-4">
+            <div class="grid grid-cols-2 sm:grid-cols-4 justify-items-center gap-13 w-full justify-around px-4">
 
                 <div class="w-45 sm:w70 text-center">
                     <img class="w-full" src="Images/sample-flower-image.png" alt="">
@@ -97,16 +101,16 @@
             </div>
         </section>
 
-
-        <section class=" max-w-5xl mx-auto flex my-35 justify-around w-full flex-col sm:flex-row">
+        <!--juroutouysde-->
+        <section class="max-w-5xl mx-auto flex flex-col my-35 px-4 justify-around w-full sm:flex-row">
             <div class="relative">
-                <img class="w-90" src="Images/flower-store.png" alt="">
-                <img class="absolute top-[-05rem] right-[-04rem] w-50 hidden sm:block animate-"
+                <img class="sm:w-90 w-full" src="Images/flower-store.png" alt="">
+                <img class="absolute top-[-05rem] right-[-04rem] w-50 hidden sm:block animate-ping"
                     src="Images/trusted-badge.png" alt="">
             </div>
 
             <div class="my-auto sm:w-[50%]">
-                <h3 class="Noto Serif text-4xl font-bold mt-6">Flower & Plants <br> Lover</h3>
+                <h3 class="noto-serif text-4xl font-bold mt-6">Flower & Plants <br> Lover</h3>
                 <ul class="list-disc pl-5">
                     <li class="py-2">Indulge your senses with the beauty and fragrance of our fresh flower shop. From
                         classic roses to exotic blooms, we offer a wide variety of fresh.</li>
@@ -158,7 +162,7 @@
 
         </section>
 
-        <section class="relative my-14 max-w-5xl mx-auto">
+        <section class="relative my-14 px-4 max-w-5xl mx-auto">
             <img class="w-full" src="Images/news-letter-bg.png" alt="">
             <div class="absolute flex flex-col inset-0 items-center justify-center">
                 <h3 class="noto-serif sm:text-4xl font-bold mb-4 mt-4 text-white">Join the colorful Bunch</h3>
@@ -194,14 +198,14 @@
                     <li class="p-2">Help Center</li>
                 </ul>
             </div>
-            </div>
-            <div class="flex gap-3">
-                <img class="w-6 h-6" src="Images/icon-linkedin.png" alt="">
-                <img class="w-6 h-6" src="Images/icon-twitter.png" alt="">
-                <img class="w-6 h-6" src="Images/icon-facebook.png" alt="">
-                <img class="w-6 h-6" src="Images/icon-youtube.png" alt="">
-            </div>
-                
+        </div>
+        <div class="flex gap-3">
+            <img class="w-6 h-6" src="Images/icon-linkedin.png" alt="">
+            <img class="w-6 h-6" src="Images/icon-twitter.png" alt="">
+            <img class="w-6 h-6" src="Images/icon-facebook.png" alt="">
+            <img class="w-6 h-6" src="Images/icon-youtube.png" alt="">
+        </div>
+
     </footer>
 </body>
 
